@@ -38,6 +38,17 @@ class MyApp extends StatelessWidget {
                     'Explore Apartments, Villas and Homes',
                     style: TextStyle(color: Colors.white),
                   ),
+                  SizedBox(height: 10),
+                  TextButton(
+                    onPressed: () {},
+                    child: Text(
+                      'Explore renting',
+                      style: TextStyle(
+                        color: Colors.white,
+                        backgroundColor: Colors.blue,
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
