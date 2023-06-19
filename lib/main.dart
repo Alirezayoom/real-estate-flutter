@@ -52,6 +52,29 @@ class MyApp extends StatelessWidget {
                 ],
               ),
             ),
+            SizedBox(
+              height: 10,
+            ),
+            Container(
+              color: Colors.green,
+              child: Column(
+                children: [
+                  Container(
+                    color: Colors.red,
+                    height: 200,
+                    width: double.infinity,
+                    child: Text('image of house'),
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Text('name'),
+                      Text('image'),
+                    ],
+                  )
+                ],
+              ),
+            ),
           ],
         ),
       ),
