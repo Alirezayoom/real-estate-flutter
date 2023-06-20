@@ -28,9 +28,9 @@ class _MyAppState extends State<MyApp> {
           title: const Text("Real Estate"),
           backgroundColor: const Color(0xff111111),
         ),
-        body: SingleChildScrollView(child: pages[currentPage]),
+        body: pages[currentPage],
         bottomNavigationBar: NavigationBar(
-          destinations: [
+          destinations: const [
             NavigationDestination(icon: Icon(Icons.home), label: "Home"),
             NavigationDestination(icon: Icon(Icons.house), label: "Rent"),
             NavigationDestination(icon: Icon(Icons.house), label: "Sale"),
