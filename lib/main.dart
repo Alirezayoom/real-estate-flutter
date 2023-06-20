@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/rent_page.dart';
 import 'pages/home_page.dart';
 
 void main() {
@@ -13,6 +14,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
+  List<Widget> pages = const [HomePage(), RentPage()];
   int currentPage = 0;
 
   @override
@@ -24,7 +26,7 @@ class _MyAppState extends State<MyApp> {
           title: const Text("Real Estate"),
           backgroundColor: const Color(0xff111111),
         ),
-        body: SingleChildScrollView(child: HomePage()),
+        body: SingleChildScrollView(child: pages[currentPage]),
         bottomNavigationBar: NavigationBar(
           destinations: [
             NavigationDestination(icon: Icon(Icons.home), label: "Home"),
