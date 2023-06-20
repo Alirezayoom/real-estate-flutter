@@ -63,21 +63,55 @@ class MyApp extends StatelessWidget {
             ),
             Container(
               margin: const EdgeInsets.symmetric(horizontal: 10),
-              color: Colors.green,
               child: Column(
                 children: [
-                  Container(
-                    color: Colors.red,
+                  SizedBox(
                     height: 200,
                     width: double.infinity,
-                    child: const Text('image of house'),
+                    child: ClipRRect(
+                      borderRadius: BorderRadius.circular(20),
+                      child: Image.asset(
+                        'images/1.jpg',
+                        fit: BoxFit.cover,
+                      ),
+                    ),
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: const [
-                      Text('name'),
-                      Text('image'),
-                    ],
+                  Container(
+                    // margin: const EdgeInsets.symmetric(
+                    //     horizontal: 10, vertical: 10),
+                    padding: EdgeInsets.symmetric(horizontal: 0, vertical: 10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: const [
+                            Text(
+                              'Price:',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            SizedBox(height: 2),
+                            Text(
+                              'Features:',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                            SizedBox(height: 2),
+                            Text(
+                              'Description:',
+                              style: TextStyle(color: Colors.white),
+                            ),
+                          ],
+                        ),
+                        Container(
+                          height: 40,
+                          width: 40,
+                          child: CircleAvatar(
+                            radius: 10,
+                            backgroundImage: AssetImage('images/1.jpg'),
+                          ),
+                        )
+                      ],
+                    ),
                   )
                 ],
               ),
