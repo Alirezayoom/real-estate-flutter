@@ -21,41 +21,48 @@ class MyApp extends StatelessWidget {
             Center(
               child: Column(
                 children: [
-                  Padding(padding: EdgeInsets.all(10)),
-                  Text(
+                  const Padding(padding: EdgeInsets.all(10)),
+                  const Text(
                     "RENT A HOME",
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 10,
                   ),
-                  Text(
+                  const Text(
                     "Rental homes for everyone",
                     style: TextStyle(color: Colors.white),
                   ),
-                  SizedBox(height: 4),
-                  Text(
+                  const SizedBox(height: 4),
+                  const Text(
                     'Explore Apartments, Villas and Homes',
                     style: TextStyle(color: Colors.white),
                   ),
-                  SizedBox(height: 10),
-                  TextButton(
-                    onPressed: () {},
-                    child: Text(
-                      'Explore renting',
-                      style: TextStyle(
-                        color: Colors.white,
-                        backgroundColor: Colors.blue,
+                  const SizedBox(height: 10),
+                  Container(
+                    padding: const EdgeInsets.all(10),
+                    child: TextButton(
+                      onPressed: () {},
+                      style: TextButton.styleFrom(
+                        padding: const EdgeInsets.all(12),
+                        backgroundColor: const Color(0xff444444),
+                      ),
+                      child: const Text(
+                        'Explore renting',
+                        style: TextStyle(
+                          color: Colors.white,
+                        ),
                       ),
                     ),
                   ),
                 ],
               ),
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
             Container(
+              margin: const EdgeInsets.symmetric(horizontal: 10),
               color: Colors.green,
               child: Column(
                 children: [
@@ -63,11 +70,11 @@ class MyApp extends StatelessWidget {
                     color: Colors.red,
                     height: 200,
                     width: double.infinity,
-                    child: Text('image of house'),
+                    child: const Text('image of house'),
                   ),
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
+                    children: const [
                       Text('name'),
                       Text('image'),
                     ],
