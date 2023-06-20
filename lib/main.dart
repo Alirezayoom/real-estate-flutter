@@ -12,10 +12,10 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        backgroundColor: Color(0xff222222),
+        backgroundColor: const Color(0xff222222),
         appBar: AppBar(
           title: const Text("Real Estate"),
-          backgroundColor: Color(0xff111111),
+          backgroundColor: const Color(0xff111111),
         ),
         body: SingleChildScrollView(
           child: Column(
@@ -63,9 +63,9 @@ class MyApp extends StatelessWidget {
               const SizedBox(
                 height: 10,
               ),
-              Item(),
-              Item(),
-              Item(),
+              const Item(),
+              const Item(),
+              const Item(),
             ],
           ),
         ),

@@ -21,26 +21,50 @@ class Item extends StatelessWidget {
             ),
           ),
           Container(
-            padding: EdgeInsets.symmetric(horizontal: 0, vertical: 10),
+            padding: const EdgeInsets.symmetric(horizontal: 0, vertical: 10),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
-                  children: const [
-                    Text(
-                      'Price:',
-                      style: TextStyle(color: Colors.white),
+                  children: [
+                    Row(
+                      children: const [
+                        Text(
+                          'Price: ',
+                          style: TextStyle(color: Colors.white70),
+                        ),
+                        Text(
+                          'Blue House',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
                     ),
-                    SizedBox(height: 2),
-                    Text(
-                      'Features:',
-                      style: TextStyle(color: Colors.white),
+                    const SizedBox(height: 2),
+                    Row(
+                      children: const [
+                        Text(
+                          'Features: ',
+                          style: TextStyle(color: Colors.white70),
+                        ),
+                        Text(
+                          '4 Rooms',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
                     ),
-                    SizedBox(height: 2),
-                    Text(
-                      'Description:',
-                      style: TextStyle(color: Colors.white),
+                    const SizedBox(height: 2),
+                    Row(
+                      children: const [
+                        Text(
+                          'Description: ',
+                          style: TextStyle(color: Colors.white70),
+                        ),
+                        Text(
+                          'at the best part of city',
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ],
                     ),
                   ],
                 ),
