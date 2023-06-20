@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_application_1/pages/rent_page.dart';
+import 'package:flutter_application_1/pages/sale_page.dart';
+import 'package:flutter_application_1/pages/search_page.dart';
 import 'pages/home_page.dart';
 
 void main() {
@@ -14,7 +16,7 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyAppState extends State<MyApp> {
-  List<Widget> pages = const [HomePage(), RentPage()];
+  List<Widget> pages = const [HomePage(), RentPage(), SalePage(), SearchPage()];
   int currentPage = 0;
 
   @override
