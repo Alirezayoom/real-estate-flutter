@@ -11,19 +11,29 @@ class HomeHero extends StatelessWidget {
           const Padding(padding: EdgeInsets.all(10)),
           const Text(
             "RENT A HOME",
-            style: TextStyle(color: Colors.white, fontSize: 20),
+            style: TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+                fontFamily: "Montserrat",
+                fontWeight: FontWeight.w800),
           ),
           const SizedBox(
             height: 10,
           ),
           const Text(
             "Rental homes for everyone",
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(
+              color: Colors.white,
+              fontFamily: "Montserrat",
+            ),
           ),
           const SizedBox(height: 4),
           const Text(
             'Explore Apartments, Villas and Homes',
-            style: TextStyle(color: Colors.white),
+            style: TextStyle(
+              color: Colors.white,
+              fontFamily: "Montserrat",
+            ),
           ),
           const SizedBox(height: 10),
           Container(
@@ -38,10 +48,12 @@ class HomeHero extends StatelessWidget {
                 'Explore renting',
                 style: TextStyle(
                   color: Colors.white,
+                  fontFamily: "Montserrat",
                 ),
               ),
             ),
           ),
+          const SizedBox(height: 10),
         ],
       ),
     );

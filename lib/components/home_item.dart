@@ -32,11 +32,17 @@ class HomeItem extends StatelessWidget {
                       children: const [
                         Text(
                           'Price: ',
-                          style: TextStyle(color: Colors.white70),
+                          style: TextStyle(
+                            color: Colors.white70,
+                            fontFamily: "Montserrat",
+                          ),
                         ),
                         Text(
                           'Blue House',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: "Montserrat",
+                          ),
                         ),
                       ],
                     ),
@@ -45,11 +51,17 @@ class HomeItem extends StatelessWidget {
                       children: const [
                         Text(
                           'Features: ',
-                          style: TextStyle(color: Colors.white70),
+                          style: TextStyle(
+                            color: Colors.white70,
+                            fontFamily: "Montserrat",
+                          ),
                         ),
                         Text(
                           '4 Rooms',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: "Montserrat",
+                          ),
                         ),
                       ],
                     ),
@@ -58,11 +70,17 @@ class HomeItem extends StatelessWidget {
                       children: const [
                         Text(
                           'Description: ',
-                          style: TextStyle(color: Colors.white70),
+                          style: TextStyle(
+                            color: Colors.white70,
+                            fontFamily: "Montserrat",
+                          ),
                         ),
                         Text(
                           'at the best part of city',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontFamily: "Montserrat",
+                          ),
                         ),
                       ],
                     ),
