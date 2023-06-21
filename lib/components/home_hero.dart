@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../pages/details_page.dart';
 
 class HomeHero extends StatelessWidget {
   const HomeHero({super.key});
@@ -39,7 +40,15 @@ class HomeHero extends StatelessWidget {
           Container(
             padding: const EdgeInsets.all(10),
             child: TextButton(
-              onPressed: () {},
+              onPressed: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return DetailsPage();
+                    },
+                  ),
+                );
+              },
               style: TextButton.styleFrom(
                 padding: const EdgeInsets.all(12),
                 backgroundColor: const Color(0xff444444),

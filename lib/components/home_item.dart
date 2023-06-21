@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/pages/details_page.dart';
 
 class HomeItem extends StatelessWidget {
   final String? title;
@@ -27,11 +28,22 @@ class HomeItem extends StatelessWidget {
           SizedBox(
             height: 200,
             width: double.infinity,
-            child: ClipRRect(
-              borderRadius: BorderRadius.circular(15),
-              child: Image.network(
-                coverPhoto.toString(),
-                fit: BoxFit.cover,
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                  MaterialPageRoute(
+                    builder: (BuildContext context) {
+                      return const DetailsPage();
+                    },
+                  ),
+                );
+              },
+              child: ClipRRect(
+                borderRadius: BorderRadius.circular(15),
+                child: Image.network(
+                  coverPhoto.toString(),
+                  fit: BoxFit.cover,
+                ),
               ),
             ),
           ),
@@ -128,8 +140,8 @@ class HomeItem extends StatelessWidget {
                 ),
 
                 SizedBox(
-                  height: 40,
-                  width: 40,
+                  height: 45,
+                  width: 45,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(100),
                     child: Image.network(

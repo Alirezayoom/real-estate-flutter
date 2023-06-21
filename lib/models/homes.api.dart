@@ -6,7 +6,7 @@ class HomesApi {
   static Future<List<Homes>> getHomes() async {
     var uri = Uri.https('bayut.p.rapidapi.com', 'properties/list', {
       "locationExternalIDs": '5002,6020',
-      // "purpose": 'for-rent',
+      // "purpose": 'for-sale',
       "hitsPerPage": '25',
       "page": '0',
       "lang": 'en',

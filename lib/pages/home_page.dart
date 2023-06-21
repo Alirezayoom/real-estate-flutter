@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_application_1/components/home_item.dart';
 import '../models/homes.dart';
 import '../models/homes.api.dart';
+import '../components/home_hero.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -30,19 +31,26 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return isLoading
-        ? const Center(child: CircularProgressIndicator())
-        : ListView.builder(
-            itemBuilder: (context, index) {
-              return HomeItem(
-                  title: homes[index].title,
-                  purpose: homes[index].purpose,
-                  price: homes[index].price,
-                  rooms: homes[index].rooms,
-                  coverPhoto: homes[index].coverPhoto,
-                  logo: homes[index].logo);
-            },
-            itemCount: homes.length,
-          );
+    return Column(
+      children: [
+        HomeHero(),
+        Expanded(
+          child: isLoading
+              ? const Center(child: CircularProgressIndicator())
+              : ListView.builder(
+                  itemBuilder: (context, index) {
+                    return HomeItem(
+                        title: homes[index].title,
+                        purpose: homes[index].purpose,
+                        price: homes[index].price,
+                        rooms: homes[index].rooms,
+                        coverPhoto: homes[index].coverPhoto,
+                        logo: homes[index].logo);
+                  },
+                  itemCount: homes.length,
+                ),
+        ),
+      ],
+    );
   }
 }

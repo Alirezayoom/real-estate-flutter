@@ -31,11 +31,28 @@ class _MyAppState extends State<MyApp> {
         ),
         body: pages[currentPage],
         bottomNavigationBar: NavigationBar(
+          height: 70,
           destinations: const [
-            NavigationDestination(icon: Icon(Icons.home), label: "Home"),
-            NavigationDestination(icon: Icon(Icons.house), label: "Rent"),
-            NavigationDestination(icon: Icon(Icons.house), label: "Sale"),
-            NavigationDestination(icon: Icon(Icons.search), label: "Search"),
+            NavigationDestination(
+                icon: Icon(
+                  Icons.home,
+                ),
+                label: "Home"),
+            NavigationDestination(
+                icon: Icon(
+                  Icons.apartment,
+                ),
+                label: "Rent"),
+            NavigationDestination(
+                icon: Icon(
+                  Icons.villa,
+                ),
+                label: "Sale"),
+            NavigationDestination(
+                icon: Icon(
+                  Icons.search,
+                ),
+                label: "Search"),
           ],
           onDestinationSelected: (int index) {
             setState(() {
