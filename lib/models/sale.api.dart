@@ -2,11 +2,11 @@ import 'dart:convert';
 import 'homes.dart';
 import 'package:http/http.dart' as http;
 
-class HomesApi {
+class SaleApi {
   static Future<List<Homes>> getHomes() async {
     var uri = Uri.https('bayut.p.rapidapi.com', 'properties/list', {
       "locationExternalIDs": '5002,6020',
-      "purpose": 'for-rent',
+      "purpose": 'for-sale',
       "hitsPerPage": '6',
       "page": '0',
       "lang": 'en',
